@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 30px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column.left{
+    flex-basis: 50%;
+}
+
+.column.right{
+    flex-basis: 48%;
+    margin-left: 2%;
+}
+
+.box{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   overflow: hidden;
+   margin-bottom: 30px;
+}
+
+
+.form h2{
+    background: rgb(128, 240, 184);
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+
+
+.form form {
+    padding: 10px;
+}
+
+.form .form-field{
+    margin: 10px 0;
+}
+
+.form-field .label-field{
+    width: 25%;
+    display: inline-block;
+    text-align: right;
+}
+
+.form-field .input-field{
+    height: 40px;
+    padding: 10px;
+    width: 60%;
+}
+
+.form-field:nth-of-type(4), .form-field:nth-of-type(5){
+    padding-left: 25%;
+}
+
+.form-field #submit{
+    background: lightblue;
+    border: 1px lightblue solid ;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+
+.result h3{
+    background: rgb(128, 240, 184);
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+}
+.item-book{
+    border: 2px lightgray solid;
+    margin: 10px 50px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.btn-check{
+    background: url('../images/check-mark-circle.svg');
+    background-size: contain;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border: none;
+}
+
+.btn-check:hover{
+    background: url('../images/check-circle-solid.svg');
+    background-size: contain;
+}
+
+.btn-undo{
+    background: url('../images/undo-circle.svg');
+    background-size: contain;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border: none;
+}
+
+.btn-undo:hover{
+    background: url('../images/undo-circle-solid.svg');
+    background-size: contain;
+}
+
+.btn-remove{
+    background: url('../images/trash-alt-outline.svg');
+    background-size: contain;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border: none;
+}
+
+.btn-remove:hover{
+    background: url('../images/trash-alt-solid.svg');
+    background-size: contain;
+}
+
+.readed .year, .not-readed .year{
+    font-style: italic;
+    font-size: 13px;
+}
+
+.message-notreaded, .message-readed{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-hidden{
+    display: none;
+}
+
+
+@media screen and (max-width: 900px){
+    .column.left{
+        flex-basis: 100%;
+    }
+    
+    .column.right{
+        flex-basis: 100%;
+        margin-left: 0;
+    }
+}
